@@ -5,5 +5,5 @@
 # Installation
 
 ```bash
-wget -O - https://raw.githubusercontent.com/Srinath10X/termux-setup/install.sh | bash
+sh -c "$(wget -qO- https://raw.githubusercontent.com/Srinath10X/termux-setup/main/install.sh)"
 ```
