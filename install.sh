@@ -18,7 +18,7 @@ termux-reload-settings
 echo "Restart Termux app..."
 cd ~/../usr/etc/
 echo -n > motd
-wget -O - https://raw.githubusercontent.com/dylanaraps/pfetch/master/pfetch ~/../usr/bin/
+mv "$HOME/termux-setup/pfetch" "$HOME/.local/bin/"
 cd ~
 echo "pfetch" >> "$HOME/.zshrc"
 echo "Removed the login screen message from the Termux app..."
