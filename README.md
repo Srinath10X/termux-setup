@@ -4,7 +4,7 @@
 
 ## Showcase
 
-![shhowcase](./assets/showcase.jpg)
+![showcase](./assets/showcase-img.jpeg)
 
 ## Table of Contents
 
