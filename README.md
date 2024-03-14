@@ -19,20 +19,20 @@
 1. Install [Termux](https://f-droid.org/en/packages/com.termux/) on your Android device if you haven't already.
 2. Open Termux and ensure it's up to date by executing:
 
-```
+```bash
 apt update && yes | apt upgrade
 ```
 
 3. Again update the packages & Install git :
 
-```
+```bash
 apt update -y  && apt install git -y
 ```
 
 4. Run the setup script:
 
 ```bash
-sh -c "$(wget -qO- https://raw.githubusercontent.com/Srinath10X/termux-setup/main/install.sh)"
+sh -c "$(curl -s https://raw.githubusercontent.com/Srinath10X/termux-setup/main/install.sh)"
 ```
 
 5. Restart the Termux for the changes to take effect.
