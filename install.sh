@@ -3,7 +3,7 @@
 # Setting up storage and updating installing the git and zsh packages
 termux-setup-storage
 apt update
-apt install -y git zsh
+apt install -y git zsh wget 
 
 # Cloning the git repo and moving .termux to $HOME/.termux
 git clone https://github.com/Srinath10X/termux-setup.git "$HOME/termux-setup" --depth 1
@@ -25,7 +25,7 @@ cd ~/../usr/etc/
 echo -n > motd
 echo "Removed the login screen message from the Termux app..."
 
-curl -o pfetch https://github.com/dylanaraps/pfetch/raw/master/pfetch
+wget -O pfetch https://github.com/dylanaraps/pfetch/raw/master/pfetch
 chmod +x pfetch 
 mv pfetch /data/data/com.termux/files/usr/bin/
 echo "pfetch" >> "$HOME/.zshrc"
