@@ -25,7 +25,7 @@ cd ~/../usr/etc/
 echo -n > motd
 echo "Removed the login screen message from the Termux app..."
 
-wget -O pfetch https://github.com/dylanaraps/pfetch/raw/master/pfetch
+curl -o pfetch https://github.com/dylanaraps/pfetch/raw/master/pfetch
 chmod +x pfetch 
 mv pfetch /data/data/com.termux/files/usr/bin/
 echo "pfetch" >> "$HOME/.zshrc"
