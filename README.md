@@ -52,11 +52,12 @@ We invite you to contribute to this repository! Whether you're creating new them
 1. Fork this repository.
 2. Create a new branch for your contribution:
 
-```
+```bash
 git checkout -b feature/theme-name
 ```
 
-3. Add your theme file to the themes directory.
+3. Add your theme file to the themes directory.( to .termux/colors and don
+   t forgot to add the .properties extension )
 4. Update the README to incorporate information about your new theme.
 5. Commit your changes and push them to your forked repository.
 6. Initiate a pull request to this repository's main branch.
