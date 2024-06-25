@@ -1,4 +1,4 @@
-# termux-setup
+# termux-setup (Dev Branch)
 
 🚀 Welcome to Termux-Setup, your swift path to a hassle-free Termux configuration! This tool automates the setup process, ensuring a quick and efficient installation of essential packages. 📦 Say goodbye to manual setups and embrace a seamless start to your Termux journey. Get your environment up and running in no time with Termux-Setup! 🔧✨
 
@@ -32,7 +32,7 @@ apt update -y  && apt install git -y
 4. Run the setup script:
 
 ```bash
-sh -c "$(curl -s https://raw.githubusercontent.com/Srinath10X/termux-setup/main/install.sh)"
+sh -c "$(curl -s https://raw.githubusercontent.com/Srinath10X/termux-setup/dev/install.sh)"
 ```
 
 5. Restart the Termux for the changes to take effect.
