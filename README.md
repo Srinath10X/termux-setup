@@ -32,7 +32,7 @@ apt update -y  && apt install git -y
 4. Run the setup script:
 
 ```bash
-sh -c "$(curl -s https://raw.githubusercontent.com/Srinath10X/termux-setup/dev/install.sh)"
+bash -c "$(curl -s https://raw.githubusercontent.com/Srinath10X/termux-setup/dev/install.sh)"
 ```
 
 5. Restart the Termux for the changes to take effect.
