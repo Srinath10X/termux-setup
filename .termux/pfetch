@@ -1,5 +1,4 @@
-#!/bin/sh
-#
+#!/data/data/com.termux/files/usr/bin/bash
 # pfetch - Simple POSIX sh fetch script.
 
 # Wrapper around all escape sequences used by pfetch to allow for

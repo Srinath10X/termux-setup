@@ -52,8 +52,11 @@ install_pfetch() {
     wget -O "$PREFIX/bin/pfetch" https://github.com/dylanaraps/pfetch/raw/master/pfetch
     chmod +x "$PREFIX/bin/pfetch"
 
-    # Add pfetch to .zshrc
-    echo "pfetch" >> "$HOME/.zshrc"
+    # Add pfetch to.zshrc with custom env vars
+    echo 'export USER="user"' >> "$HOME/.zshrc"
+    echo 'export HOSTNAME="termux"' >> "$HOME/.zshrc"
+    echo 'export PF_INFO="ascii title os host pkgs shell memory"' >> "$HOME/.zshrc"
+    echo 'pfetch' >> "$HOME/.zshrc"
     echo_message "Installed pfetch"
 }
 
