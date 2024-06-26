@@ -34,7 +34,6 @@ setup_oh_my_zsh() {
 
 	# Install zsh-syntax-highlighting
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.zsh-syntax-highlighting" --depth 1
-	echo "source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >>"$HOME/.zshrc"
 
 	# Change the default shell to zsh
 	chsh -s zsh
@@ -48,7 +47,7 @@ remove_login_message() {
 
 # Function to install pfetch
 install_pfetch() {
-	curl -O "$PREFIX/bin/pfetch" https://github.com/dylanaraps/pfetch/raw/master/pfetch && chmod +x "$PREFIX/bin/pfetch"
+	curl -sSL https://github.com/dylanaraps/pfetch/raw/master/pfetch -o "$PREFIX/bin/pfetch" && chmod +x "$PREFIX/bin/pfetch"
 }
 
 main() {
