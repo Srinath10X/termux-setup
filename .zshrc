@@ -26,11 +26,13 @@ fi
 export USER="user"
 export HOSTNAME="termux"
 export SHELL="zsh"
-export EDITOR="nano"
-export VISUAL="nano"
+
+# Set your prefered editor of your choice
+# export EDITOR="nano" 
+# export VISUAL="nano"
 
 # Customize pfetch information display
-export PF_INFO="ascii title os host pkgs shell memory editor"
+export PF_INFO="ascii title os host pkgs shell memory"
 
 # Add local bin directories to PATH
 export PATH=$HOME/.local/bin:$HOME/bin:$PATH
@@ -65,6 +67,9 @@ ex () {
     echo "'$1' is not a valid file"
   fi
 }
+
+# reporting tools( fetch scripts ) - install comment when not installed
+pfetch 
 
 # -------------------------------- #
 # --------->  aliases  <---------- #
