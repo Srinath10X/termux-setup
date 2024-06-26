@@ -8,7 +8,7 @@ echo_message() {
 # Function to setup storage and install packages
 setup_storage_and_install_packages() {
 	termux-setup-storage
-	apt update && apt install -y git zsh wget
+	apt update && apt install -y git zsh
 }
 
 # Function to clone the git repository and setup .termux configuration
@@ -29,11 +29,8 @@ setup_oh_my_zsh() {
 	# Backup existing .zshrc if it exists
 	[ -f "$HOME/.zshrc" ] && mv "$HOME/.zshrc" "$HOME/.zshrc.backup"
 
-	# Copy oh-my-zsh template and set theme
-
-	# TODO: Instead of copying the zshrc template just make a custom zshrc template and remove the optimize this
-	cp "$HOME/.oh-my-zsh/templates/zshrc.zsh-template" "$HOME/.zshrc"
-	sed -i '1iZSH_THEME="robbyrussell"' "$HOME/.zshrc"
+	# Copy .zshrc basic template to home
+	cp "$HOME/termux-setup/.zshrc" "$HOME/"
 
 	# Install zsh-syntax-highlighting
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.zsh-syntax-highlighting" --depth 1
@@ -51,8 +48,7 @@ remove_login_message() {
 
 # Function to install pfetch
 install_pfetch() {
-	wget -O "$PREFIX/bin/pfetch" https://github.com/dylanaraps/pfetch/raw/master/pfetch
-	chmod +x "$PREFIX/bin/pfetch"
+	curl -O "$PREFIX/bin/pfetch" https://github.com/dylanaraps/pfetch/raw/master/pfetch && chmod +x "$PREFIX/bin/pfetch"
 
 	# Add pfetch to.zshrc with custom env vars
 	lines=(
