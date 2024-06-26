@@ -49,18 +49,6 @@ remove_login_message() {
 # Function to install pfetch
 install_pfetch() {
 	curl -O "$PREFIX/bin/pfetch" https://github.com/dylanaraps/pfetch/raw/master/pfetch && chmod +x "$PREFIX/bin/pfetch"
-
-	# Add pfetch to.zshrc with custom env vars
-	lines=(
-		"export USER=\"user\""
-		"export HOSTNAME=\"termux\""
-		"export PF_INFO=\"ascii title os host pkgs shell memory\""
-		"pfetch"
-	)
-
-	for line in "${lines[@]}"; do
-		echo "$line" >>"$HOME/.zshrc"
-	done
 }
 
 main() {
