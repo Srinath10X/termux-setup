@@ -11,33 +11,23 @@ plugins=(git)
 
 # zsh_history
 HISTFILE=$HOME/.zsh_history
-SAVEHIST=1000
 HISTSIZE=1000
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+
+# history opts
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+
 
 if [ -f $ZSH/oh-my-zsh.sh ]; then
   source $ZSH/oh-my-zsh.sh
 fi
-
-# ------------------------------- #
-# --------->  Exports  <--------- #
-# ------------------------------- #
-
-# Basic environment settings
-export USER="user"
-export HOSTNAME="termux"
-export SHELL="zsh"
-
-# Set your prefered editor of your choice
-# export EDITOR="nano" 
-# export VISUAL="nano"
-
-# Customize pfetch information display
-export PF_INFO="ascii title os host pkgs shell memory"
-
-# Add local bin directories to PATH
-export PATH=$HOME/.local/bin:$HOME/bin:$PATH
-export PATH=$HOME/.cargo/bin:$PATH
-export PATH=$HOME/go/bin:$PATH
 
 # --------------------------------- #
 # ---------->  Scripts <----------- #
