@@ -29,8 +29,8 @@ setup_oh_my_zsh() {
 	# Backup existing .zshrc if it exists
 	[ -f "$HOME/.zshrc" ] && mv "$HOME/.zshrc" "$HOME/.zshrc.backup"
 
-	# Copy .zshrc basic template to home
-	cp "$HOME/termux-setup/.zshrc" "$HOME/"
+	# Copy .zshrc and .zshenv basic template to home
+	cp "$HOME/termux-setup/.zshrc" "$HOME/termux-setup/.zshenv" "$HOME/"
 
 	# Install zsh-syntax-highlighting
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.zsh-syntax-highlighting" --depth 1
