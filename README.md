@@ -4,7 +4,7 @@
 
 ## Showcase
 
-![showcase](./.github/assets/termux-setup.jpg)
+![showcase](https://i.imgur.com/Io4sZ0v.jpeg)
 
 ## Table of Contents
 
