@@ -2,9 +2,6 @@
 # ------->  ZSH Config's  <------- #
 # -------------------------------- #
 
-# ZSH direcotory
-export ZSH=$HOME/.oh-my-zsh
-
 # zsh_theme
 ZSH_THEME="robbyrussell"
 plugins=(git)
