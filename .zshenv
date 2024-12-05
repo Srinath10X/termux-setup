@@ -2,6 +2,9 @@
 # --------->  Exports  <--------- #
 # ------------------------------- #
 
+# ZSH direcotory
+export ZSH=$HOME/.oh-my-zsh
+
 # Basic environment settings
 export USER="user"
 export HOSTNAME="termux"
