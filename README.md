@@ -1,10 +1,10 @@
 # termux-setup
 
-🚀 Welcome to Termux-Setup, your swift path to a hassle-free Termux configuration! This tool automates the setup process, ensuring a quick and efficient installation of essential packages. 📦 Say goodbye to manual setups and embrace a seamless start to your Termux journey. Get your environment up and running in no time with Termux-Setup! 🔧✨
+A simple and hassle-free Termux configuration! This script automates the setup process, ensuring a quick and efficient installation of essential packages.
 
 ## Showcase
 
-![showcase](https://i.imgur.com/Io4sZ0v.jpeg)
+![showcase](.termux/assets/banner.jpg)
 
 ## Table of Contents
 
